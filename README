@@ -3,12 +3,17 @@ Waterloo's weather station. See http://weather.uwaterloo.ca .
 
 This is both a widget that can run on your home screen, as well as
 an app that simply reads the current settings off the web page, and
-display it.
+displays them.
 
 The app is not sophisticated: it was written to learn a bit about
 Android programming in Java, and may be useful for others wishing
 to do the same.
 
+To fetch just the app, browse to
+http://github.com/gdmalet/UWWeather/tree/master/bin
+ - and click on UWWeather.apk.
+
+This started life as a copy of the Wiktionary sample app.
 
 gdmalet@gmail.com
 Sat Mar 12 16:12:01 EST 2011
