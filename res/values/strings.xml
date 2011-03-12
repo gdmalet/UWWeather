@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">U of W Weather</string>
+    <string name="app_name_long">University of Waterloo Weather</string>
+    <string name="template_user_agent">"%1$s/%2$s (Linux; Android)"</string>
+    <string name="app_description">Displays weather data gathered from the weather station at the University of Waterloo, based in Ontario, Canada.</string>
+    <string name="weather_url">http://weather.uwaterloo.ca/waterloo_weather_station_data.xml</string>
+    <string name="widget_loading">&quot;Loading current conditions...&quot;</string>
+    <string name="widget_error">Something went wrong fetching the weather!</string>
+    <string name="weather_page_url">http://weather.uwaterloo.ca</string>
+    <string name="empty_result">Unable to retrieve current weather data.</string>
+<string name="uwweather">&lt;?xml version=\"1.0\" encoding=\"UTF-8\" ?&gt;
+  &lt;current_observation&gt;
+  &lt;credit&gt;University of Waterloo Weather Station&lt;/credit&gt;
+  &lt;credit_URL&gt;http://weather.uwaterloo.ca/&lt;/credit_URL&gt; 
+  &lt;suggested_pickup&gt;5, 20, 35, and 50 minutes after the hour&lt;/suggested_pickup&gt; 
+  &lt;suggested_pickup_period&gt;15&lt;/suggested_pickup_period&gt; 
+  &lt;location&gt;University of Waterloo,  Ontario, Canada&lt;/location&gt; 
+  &lt;latitude&gt;43.28.26 N&lt;/latitude&gt; 
+  &lt;longitude&gt;080.33.28 W&lt;/longitude&gt; 
+  &lt;elevation&gt;334.4 m&lt;/elevation&gt; 
+  &lt;observation_month_text&gt;December &lt;/observation_month_text&gt; 
+  &lt;observation_month_number&gt;12&lt;/observation_month_number&gt; 
+  &lt;observation_day&gt;17&lt;/observation_day&gt; 
+  &lt;observation_year&gt; 2010&lt;/observation_year&gt; 
+  &lt;observation_time&gt;12:30 am&lt;/observation_time&gt; 
+  &lt;observation_hour&gt; 00&lt;/observation_hour&gt; 
+  &lt;observation_minute&gt; 30&lt;/observation_minute&gt; 
+  &lt;temperature_current_C&gt;-15.3 &lt;/temperature_current_C&gt; 
+  &lt;humidex_C&gt;N_A &lt;/humidex_C&gt; 
+  &lt;windchill_C&gt;-19.5 &lt;/windchill_C&gt; 
+  &lt;temperature_24hrmax_C&gt;-14.7 &lt;/temperature_24hrmax_C&gt; 
+  &lt;temperature_24hrmin_C&gt;-19.2 &lt;/temperature_24hrmin_C&gt; 
+  &lt;precipitation_15minutes_mm&gt;N_A  &lt;/precipitation_15minutes_mm&gt; 
+  &lt;precipitation_1hr_mm&gt;10.2    &lt;/precipitation_1hr_mm&gt; 
+  &lt;precipitation_24hr_mm&gt;12.2  &lt;/precipitation_24hr_mm&gt; 
+  &lt;relative_humidity_percent&gt;100 &lt;/relative_humidity_percent&gt; 
+  &lt;dew_point_C&gt;-15.3&lt;/dew_point_C&gt; 
+  &lt;wind_speed_kph&gt;16.2 &lt;/wind_speed_kph&gt; 
+  &lt;wind_direction&gt; SE&lt;/wind_direction&gt; 
+  &lt;wind_direction_degrees&gt;135&lt;/wind_direction_degrees&gt; 
+  &lt;pressure_kpa&gt;100.7 &lt;/pressure_kpa&gt; 
+  &lt;pressure_trend&gt;   Rising &lt;/pressure_trend&gt; 
+  &lt;incoming_shortwave_radiation_WM2&gt;800     &lt;/incoming_shortwave_radiation_WM2&gt; 
+  &lt;/current_observation&gt;
+</string>
+<string name="app_descrip">Weather details from the University of Waterloo, located in Waterloo, Ontario, Canada.\n\nhttp://weather.uwaterloo.ca</string>
+<string name="app_credits">Author: Giles Malet\ngdmalet@gmail.com</string>
+<string name="widget_name">UW Weather</string>
+</resources>
