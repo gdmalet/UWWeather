@@ -172,6 +172,12 @@ public class UWWeatherWidget extends AppWidgetProvider {
             	Time t = new Time();
             	t.setToNow();
             	int expectedH = t.hour;
+            	if (t.isDst == 1) {	// weather station ignores DST, so need to adjust
+            		if (expectedH == 0)
+            			expectedH = 23;
+            		else
+            			expectedH -= 1;
+            	}
             	int expectedM = t.minute - (t.minute % 15);
             	if (h != expectedH || m != expectedM)
             		views.setTextColor(R.id.weather_temp, 0xFFFF0000);

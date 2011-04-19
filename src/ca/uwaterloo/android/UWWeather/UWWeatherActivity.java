@@ -168,7 +168,7 @@ public class UWWeatherActivity extends ListActivity implements AnimationListener
     			parsed.get("observation_hour"), parsed.get("observation_minute"),
     			parsed.get("observation_day"),
     			parsed.get("observation_month_text"),
-    			parsed.get("observation_year"));;
+    			parsed.get("observation_year"));
     	mTitle.setText(content);
     	
     	// Check that the data is current
@@ -177,6 +177,12 @@ public class UWWeatherActivity extends ListActivity implements AnimationListener
     	Time t = new Time();
     	t.setToNow();
     	int expectedH = t.hour;
+    	if (t.isDst == 1) {	// weather station ignores DST, so need to adjust
+    		if (expectedH == 0)
+    			expectedH = 23;
+    		else
+    			expectedH -= 1;
+    	}
     	int expectedM = t.minute - (t.minute % 15);
     	if (h != expectedH || m != expectedM)
     		mTitle.setTextColor(0xFFFF0000);
